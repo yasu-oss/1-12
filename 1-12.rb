@@ -5,6 +5,7 @@ end
 
 puts double(100)
 
+
 #2
 def add(a,b)
   a + b
@@ -12,16 +13,18 @@ end
 
 puts add(100, 200)
 
+
 #3
 def times(arr)
-  result arr.shift()
+  x = 0
+  x arr.shift()
   arr.each do |num|
-    result *= num
-end
-  result
-end
+    x *= num
+  end
+  return x
+  end
 
-puts times(arr[1, 3, 5, 7, 9])
+puts times([1, 3, 5, 7, 9])
 
 #4
 def max_array(arr)
@@ -30,9 +33,15 @@ def max_array(arr)
   
   arr each do |a|
     #↓課題4↓
-    
+    if max_number > 0{
+      return a
+    else
+      not return
+    }
     
   end
   
     return max_number
   end
+  
+  puts max_array(arr[1, 2, 3, 4, 5, 6, 7, 8, 9])
